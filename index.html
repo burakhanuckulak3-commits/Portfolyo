@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burakhan Üçkulak | Portfolyo</title>
+    <meta name="description" content="Burakhan Üçkulak - Bilgisayar Programcılığı Öğrencisi & Junior Developer Adayı Portfolyosu">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-effects">
+        <div class="glow glow-1"></div>
+        <div class="glow glow-2"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">B<span>Ü</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">Hakkımda</a></li>
+                <li><a href="#projects">Projeler</a></li>
+                <li><a href="#skills">Beceriler</a></li>
+                <li><a href="#education">Eğitim</a></li>
+                <li><a href="#contact" class="btn-contact">İletişim</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero fade-in">
+            <div class="hero-content">
+                <p class="greeting">Merhaba, ben</p>
+                <h1 class="name">Burakhan Üçkulak</h1>
+                <h2 class="title">Bilgisayar Programcılığı Öğrencisi <br>& <span class="highlight">Junior Developer Adayı</span></h2>
+                <p class="bio">
+                    Algoritma mantığı ve temel yazılım geliştirme konularında sağlam bir temel oluşturmaya odaklı, disiplinli ve öğrenmeye açık bir geliştirici adayıyım.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">Projelerimi Gör</a>
+                    <a href="#contact" class="btn btn-secondary">İletişime Geç</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-window">
+                    <div class="window-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <pre><code><span class="keyword">const</span> <span class="variable">developer</span> = {
+    <span class="property">name</span>: <span class="string">"Burakhan Üçkulak"</span>,
+    <span class="property">role</span>: <span class="string">"Junior Developer"</span>,
+    <span class="property">focus</span>: [<span class="string">"Algoritma"</span>, <span class="string">"Yazılım Geliştirme"</span>],
+    <span class="property">learning</span>: <span class="boolean">true</span>
+};
+
+<span class="function">innovate</span>(developer);</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section fade-in">
+            <div class="section-header">
+                <h2>Hakkımda</h2>
+                <div class="line"></div>
+            </div>
+            <div class="about-content grid-2">
+                <div class="about-text">
+                    <p>
+                        <strong>C</strong> ve <strong>Python</strong> dilleriyle konsol uygulamaları geliştirerek pratik yapıyorum. Analitik düşünme becerilerimi teknik yetkinliğe dönüştürmeye odaklanıyorum.
+                    </p>
+                    <p>
+                        Şu anda <strong>Dumlupınar Üniversitesi'nde</strong> eğitimime devam etmekteyim. Her yeni projede kod yazma pratiğimi geliştirmeyi ve yazılım mimarilerini daha iyi anlamayı hedefliyorum.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <i class="fa-solid fa-code icon"></i>
+                        <h3>Problem Çözme</h3>
+                        <p>Analitik Yaklaşım</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fa-solid fa-book-open icon"></i>
+                        <h3>Sürekli Öğrenme</h3>
+                        <p>Araştırmacı Ruh</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section fade-in">
+            <div class="section-header">
+                <h2>Projeler</h2>
+                <div class="line"></div>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <i class="fa-solid fa-folder project-icon"></i>
+                        </div>
+                        <h3>Öğrenci Yönetim Sistemi</h3>
+                        <p class="project-desc">
+                            C dili kullanılarak geliştirilen; öğrenci ekleme, silme ve listeleme özelliklerine sahip uygulama. Fonksiyon yapıları ve dizi yönetimi üzerine kurgulandı.
+                        </p>
+                        <ul class="project-tech">
+                            <li>C Programlama</li>
+                            <li>Konsol Uygulaması</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <i class="fa-solid fa-folder project-icon"></i>
+                        </div>
+                        <h3>Not Hesaplama Programı</h3>
+                        <p class="project-desc">
+                            Kullanıcı verileriyle ortalama hesaplayan, koşul yapıları ve döngüler içeren bir Python uygulaması.
+                        </p>
+                        <ul class="project-tech">
+                            <li>Python</li>
+                            <li>Algoritma</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <i class="fa-solid fa-folder project-icon"></i>
+                        </div>
+                        <h3>Kişisel Portfolyo Sitesi</h3>
+                        <p class="project-desc">
+                            HTML ve CSS kullanılarak responsive (mobil uyumlu) mantıkla tasarlanmış, karanlık tema destekli ve modern arayüzlü web sayfası.
+                        </p>
+                        <ul class="project-tech">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section fade-in">
+            <div class="section-header">
+                <h2>Teknik Beceriler</h2>
+                <div class="line"></div>
+            </div>
+            <div class="skills-container grid-3">
+                <div class="skill-category">
+                    <h3><i class="fa-solid fa-code"></i> Diller</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span>C (Temel)</span>
+                            <div class="skill-bar"><div class="skill-level" style="width: 60%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Python (Temel)</span>
+                            <div class="skill-bar"><div class="skill-level" style="width: 55%"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fa-solid fa-globe"></i> Web</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span>HTML5</span>
+                            <div class="skill-bar"><div class="skill-level" style="width: 75%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>CSS3</span>
+                            <div class="skill-bar"><div class="skill-level" style="width: 65%"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fa-solid fa-wrench"></i> Araçlar & Mantık</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span>Algoritma Mantığı</span>
+                            <div class="skill-bar"><div class="skill-level" style="width: 80%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Git (Temel Seviye)</span>
+                            <div class="skill-bar"><div class="skill-level" style="width: 40%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section fade-in">
+            <div class="section-header">
+                <h2>Eğitim</h2>
+                <div class="line"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Dumlupınar Üniversitesi - Simav</h3>
+                        <h4>Bilgisayar Programcılığı (Ön Lisans)</h4>
+                        <span class="date">2025 - 2028 (Devam Ediyor)</span>
+                        <p>Yazılım temelleri, algoritma geliştirme ve bilgisayar bilimleri üzerine akademik eğitim süreci.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section fade-in">
+            <div class="section-header">
+                <h2>İletişim</h2>
+                <div class="line"></div>
+            </div>
+            <div class="contact-container">
+                <p class="contact-text">Projeleriniz veya fırsatlar için iletişime geçmekten çekinmeyin. <br>Her zaman yeni deneyimlere ve öğrenmeye açığım.</p>
+                <div class="contact-cards">
+                    <a href="mailto:burakhanuckulak3@gmail.com" class="contact-card">
+                        <i class="fa-solid fa-envelope"></i>
+                        <h3>E-posta</h3>
+                        <span>burakhanuckulak3@gmail.com</span>
+                    </a>
+                    <a href="https://linkedin.com/in/burakhan-üçkulak-a45178333" target="_blank" class="contact-card">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <h3>LinkedIn</h3>
+                        <span>/in/burakhan-üçkulak</span>
+                    </a>
+                    <a href="tel:+905334427368" class="contact-card">
+                        <i class="fa-solid fa-phone"></i>
+                        <h3>Telefon</h3>
+                        <span>+90 533 442 73 68</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <a href="#" class="logo">B<span>Ü</span></a>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/burakhan-üçkulak-a45178333" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:burakhanuckulak3@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <p>&copy; 2026 Burakhan Üçkulak. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
