@@ -1,3 +1,15 @@
+/* Tüm öğelerin genişliğini border ve padding dahil hesapla */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Yatay kaymayı tamamen engellemek için ana gövdeyi kısıtla */
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
 /* Custom Properties & Tokens */
 :root {
     /* Colors */
@@ -818,4 +830,5 @@ footer {
     .title {
         font-size: 1.3rem;
     }
+
 }
