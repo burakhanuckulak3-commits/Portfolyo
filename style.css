@@ -1,4 +1,4 @@
-/* Tüm öğelerin genişliğini border ve padding dahil hesapla */
+/** Tüm öğelerin genişliğini border ve padding dahil hesapla */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -349,21 +349,21 @@ main {
     border-bottom: 1px solid var(--border-color);
 }
 
-.dot {
+dot {
     width: 12px;
     height: 12px;
     border-radius: 50%;
 }
 
-.dot.red {
+dot.red {
     background: #ef4444;
 }
 
-.dot.yellow {
+dot.yellow {
     background: #f59e0b;
 }
 
-.dot.green {
+dot.green {
     background: #10b981;
 }
 
@@ -793,9 +793,17 @@ footer {
     .grid-2 {
         grid-template-columns: 1fr;
     }
+    
+    .section-header h2 {
+        font-size: 2rem;
+    }
 }
 
 @media (max-width: 768px) {
+    .nav-container {
+        padding: 0 1rem;
+    }
+    
     .nav-links {
         position: absolute;
         top: 100%;
@@ -805,8 +813,8 @@ footer {
         backdrop-filter: var(--blur);
         border-bottom: 1px solid var(--border-color);
         flex-direction: column;
-        padding: 2rem 0;
-        gap: 1.5rem;
+        padding: 1.5rem 0;
+        gap: 1rem;
         clip-path: circle(0% at top right);
         transition: clip-path 0.4s ease-out;
     }
@@ -820,7 +828,11 @@ footer {
     }
 
     .section {
-        padding: 5rem 0;
+        padding: 3rem 0;
+    }
+    
+    main {
+        padding: 0 1rem;
     }
 
     .name {
@@ -830,6 +842,82 @@ footer {
     .title {
         font-size: 1.3rem;
     }
+    
+    .section-header h2 {
+        font-size: 1.5rem;
+    }
+    
+    .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .section-header .line {
+        max-width: none;
+        width: 100%;
+    }
+    
+    .hero {
+        padding-top: 5rem;
+        gap: 2rem;
+    }
+    
+    .code-window {
+        max-width: 100%;
+    }
+    
+    .stat-card, .project-card, .contact-card, .skill-category {
+        padding: 1.5rem 1rem;
+    }
+    
+    .bio {
+        font-size: 1rem;
+    }
 
 }
 
+@media (max-width: 480px) {
+    .nav-container {
+        padding: 0 0.75rem;
+    }
+    
+    main {
+        padding: 0 0.75rem;
+    }
+    
+    .section {
+        padding: 2rem 0;
+    }
+    
+    .name {
+        font-size: 1.8rem;
+    }
+    
+    .title {
+        font-size: 1.1rem;
+    }
+    
+    .section-header h2 {
+        font-size: 1.3rem;
+    }
+    
+    .hero-cta {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .glow-1, .glow-2 {
+        display: none;
+    }
+}
