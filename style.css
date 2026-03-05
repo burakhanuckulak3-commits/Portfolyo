@@ -279,14 +279,19 @@ main {
 }
 
 .name {
-    font-size: clamp(2rem, 5vw, 5rem); /* Mobilde yan yana sığabilmesi için en küçük boyutu 3'ten 2'ye çektim */
-    font-weight: 800;
-    line-height: 1.1;
-    margin-bottom: 1rem;
-    color: #ffffff; /* Her iki kelimenin de aynı tonda, saf beyaz olmasını sağlar */
-    background: none; /* Arka planda kalmış olabilecek tüm renk geçişlerini iptal eder */
-    -webkit-text-fill-color: initial; /* Eski şeffaflık komutlarını ezer */
-    white-space: nowrap; /* Ekran ne kadar daralırsa daralsın, yazının alt alta inmesini kesin olarak yasaklar */
+    /* Boyutu biraz daha küçülttük ki telefon ekranında yan yana sığabilsin */
+    font-size: clamp(1.8rem, 4vw, 4rem) !important; 
+    font-weight: 800 !important;
+    line-height: 1.1 !important;
+    margin-bottom: 1rem !important;
+    
+    /* Renkleri eşitleme ve eski gri efekti yok etme operasyonu */
+    color: #ffffff !important; 
+    background: none !important; 
+    -webkit-text-fill-color: #ffffff !important; 
+    
+    /* Asla alt satıra inmemesi için kesin emir */
+    white-space: nowrap !important; 
 }
 
 .title {
