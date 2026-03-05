@@ -817,9 +817,15 @@ footer {
     .title {
         font-size: 1.3rem;
     }
-    .soyisim {
-    display: inline-block; /* Elementin serbestçe hareket edebilmesini sağlar */
-    transform: translateX(1ch); /* X ekseninde (sağa doğru) tam 1 harf kaydırır */
+    .name {
+    font-size: clamp(2rem, 5vw, 5rem); /* Mobilde yan yana sığabilmesi için en küçük boyutu 3'ten 2'ye çektim */
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+    color: #ffffff; /* Her iki kelimenin de aynı tonda, saf beyaz olmasını sağlar */
+    background: none; /* Arka planda kalmış olabilecek tüm renk geçişlerini iptal eder */
+    -webkit-text-fill-color: initial; /* Eski şeffaflık komutlarını ezer */
+    white-space: nowrap; /* Ekran ne kadar daralırsa daralsın, yazının alt alta inmesini kesin olarak yasaklar */
 }
 }
     
