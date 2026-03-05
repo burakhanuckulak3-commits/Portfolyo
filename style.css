@@ -817,5 +817,9 @@ footer {
     .title {
         font-size: 1.3rem;
     }
+    .soyisim {
+    display: inline-block; /* Elementin serbestçe hareket edebilmesini sağlar */
+    transform: translateX(1ch); /* X ekseninde (sağa doğru) tam 1 harf kaydırır */
+}
 }
     
