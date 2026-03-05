@@ -279,27 +279,23 @@ main {
 }
 
 .name {
-    /* Boyutu biraz daha küçülttük ki telefon ekranında yan yana sığabilsin */
-    font-size: clamp(3rem, 4vw, 4rem) !important; 
+    /* Ekran genişliğinin %11'i kadar büyü, ama 5rem'i geçme! 
+       Bu sayede tek satırda kalabileceği EN BÜYÜK boyuta ulaşır. */
+    font-size: min(11vw, 5rem) !important; 
     font-weight: 800 !important;
     line-height: 1.1 !important;
-    margin-bottom: 1rem !important;
-    
-    /* Renkleri eşitleme ve eski gri efekti yok etme operasyonu */
+    margin-bottom: 0.5rem !important;
     color: #ffffff !important; 
-    background: none !important; 
-    -webkit-text-fill-color: #ffffff !important; 
-    
-    /* Asla alt satıra inmemesi için kesin emir */
     white-space: nowrap !important; 
 }
 
 .title {
-    font-size: clamp(1.5rem, 3vw, 2.5rem);
-    color: var(--text-muted);
-    font-weight: 600;
-    line-height: 1.3;
-    margin-bottom: 1.5rem;
+    /* Alt yazının mobilde parçalanmasını engellemek için dinamik boyutlandırma */
+    font-size: clamp(1.1rem, 4vw, 2.5rem) !important;
+    font-weight: 600 !important;
+    line-height: 1.4 !important;
+    margin-bottom: 1.5rem !important;
+    color: var(--text-muted) !important;
 }
 
 .highlight {
