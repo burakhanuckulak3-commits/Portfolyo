@@ -279,12 +279,14 @@ main {
 }
 
 .name {
-    font-size: clamp(3rem, 5vw, 5rem);
+    font-size: clamp(2rem, 5vw, 5rem); /* Mobilde yan yana sığabilmesi için en küçük boyutu 3'ten 2'ye çektim */
     font-weight: 800;
     line-height: 1.1;
     margin-bottom: 1rem;
-    color: #ffffff; /* Tüm yazıyı eşit derecede saf beyaz yapar */
-    text-shadow: 0 0 15px rgba(255, 255, 255, 0.3); /* Hafif, teknolojik bir parlama ekler */
+    color: #ffffff; /* Her iki kelimenin de aynı tonda, saf beyaz olmasını sağlar */
+    background: none; /* Arka planda kalmış olabilecek tüm renk geçişlerini iptal eder */
+    -webkit-text-fill-color: initial; /* Eski şeffaflık komutlarını ezer */
+    white-space: nowrap; /* Ekran ne kadar daralırsa daralsın, yazının alt alta inmesini kesin olarak yasaklar */
 }
 
 .title {
@@ -817,15 +819,5 @@ footer {
     .title {
         font-size: 1.3rem;
     }
-    .name {
-    font-size: clamp(2rem, 5vw, 5rem); /* Mobilde yan yana sığabilmesi için en küçük boyutu 3'ten 2'ye çektim */
-    font-weight: 800;
-    line-height: 1.1;
-    margin-bottom: 1rem;
-    color: #ffffff; /* Her iki kelimenin de aynı tonda, saf beyaz olmasını sağlar */
-    background: none; /* Arka planda kalmış olabilecek tüm renk geçişlerini iptal eder */
-    -webkit-text-fill-color: initial; /* Eski şeffaflık komutlarını ezer */
-    white-space: nowrap; /* Ekran ne kadar daralırsa daralsın, yazının alt alta inmesini kesin olarak yasaklar */
-}
 }
     
