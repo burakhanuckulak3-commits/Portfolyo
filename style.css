@@ -819,7 +819,3 @@ footer {
         font-size: 1.3rem;
     }
 }
-    .soyisim {
-        display: inline-block;
-        margin-left: 1ch; /* Tam olarak '1 harf' genişliğinde sağa iter */
-}
