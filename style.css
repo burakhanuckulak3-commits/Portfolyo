@@ -280,7 +280,7 @@ main {
 
 .name {
     /* Boyutu biraz daha küçülttük ki telefon ekranında yan yana sığabilsin */
-    font-size: clamp(1.8rem, 4vw, 4rem) !important; 
+    font-size: clamp(3rem, 4vw, 4rem) !important; 
     font-weight: 800 !important;
     line-height: 1.1 !important;
     margin-bottom: 1rem !important;
